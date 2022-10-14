@@ -1,0 +1,154 @@
+/* 头部 */
+.header {
+	background-color: #b1030c;
+}
+.top_bar {
+	width: 1160px;
+	height: 40px;
+	margin: auto;
+	background-color: #b1030c;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.top_bar p a {
+	color: #fff;
+	width: 82px;
+	height: 40px;
+	line-height: 40px;
+}
+.top_bar p {
+	/* width: 130px; */
+	height: 40px;
+	line-height: 40px;
+	color: #fff;
+	white-space: nowrap;
+}
+@keyframes text {
+	0% {
+		transform: translate(200px);
+	}
+	100%{
+		transform: translate(-1000px);
+	}
+}
+.top_bar .text-slide {
+	height: 40px;
+	flex: 1;
+	margin: 0 30px;
+	overflow: hidden;
+	position: relative;
+}
+.top_bar ul{
+	width: 200px;
+	position: absolute;
+	right: 0;
+	top: 50%;
+	margin: -10px;
+	animation: text 10s linear infinite;
+}
+.top_bar ul li {
+	color: #fff;
+	font-size: 14px;
+	text-align: center;
+}
+.top_bar ul:hover {
+	animation-play-state: paused;
+}
+.nav {
+	width: 1160px;
+	height: 90px;
+	margin: auto;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.nav>div {
+	width: 135px;
+	height: 40px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.nav>div>a {
+	display: block;
+	height: 30px;
+	position: relative;
+}
+.nav>div>a::after{
+	content: '';
+	display: block;
+	width: 0px;
+	height: 3px;
+	position: absolute;
+	background-color: #b1030c;
+	bottom: 0;
+	left: 50%;
+	transition: all 0.3s;
+}
+.nav>div>a:hover::after {
+	width: 100%;
+	left: 0;
+}
+.nav>div:nth-child(4){
+	width: 230px;
+	height: 67px;
+	margin: 0 20px;
+}
+.nav>div:nth-child(4)>a{
+	width: 230px;
+	height: 67px;
+}
+.nav>div:nth-child(4)>a:hover::after{
+	width: 0;
+}
+
+
+
+
+/* 脚部 */
+.mall_link {
+	width: 100%;
+	/* height: 102px; */
+	display: flex;
+	justify-content: center;
+}
+.mall_link>ul{
+	margin: 20px 0 30px;
+	display: flex;
+	justify-content: space-between;
+}
+.mall_link>ul>li{
+	margin: 0 10px;
+}
+.bot-menu {
+	width: 100%;
+	height: 89px;
+	background-color: #b1030c;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.bot-menu ul {
+	display: flex;
+}
+.bot-menu ul li {
+	margin: 0 10px;
+	display: flex;
+	color: #fff;
+}
+.bot-menu ul li a{
+	color: #fff;
+	margin-right: 10px;
+}
+.footer {
+	width: 100%;
+	height: 70px;
+	background-color: #910106;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.footer p{
+	color: #fff;
+}

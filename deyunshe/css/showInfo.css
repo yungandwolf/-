@@ -1,0 +1,91 @@
+.nav>div:nth-child(1)>a::after{
+	content: '';
+	display: block;
+	width: 100%;
+	height: 3px;
+	position: absolute;
+	background-color: #b1030c;
+	bottom: 0;
+	left: 0;
+	transition: all 0.3s;
+}
+/* 内容部分 */
+.container {
+	width: 100%;
+	border-top: 1px solid gray;
+}
+.container>.cont{
+	width: 1160px;
+	margin: 0 auto;
+}
+.container>.cont>h3{
+	margin: 30px 0;
+	color: #b1030c;
+}
+.container>.cont>table {
+	width: 100%;
+	border: 1px solid #999;
+	border-collapse: collapse;
+}
+.container>.cont>table tr td{
+	text-align: center;
+	border: 1px solid #999;
+s}
+.container>.cont>table tr:first-child>td{
+	height: 32px;
+	font-size: 14px;
+	line-height: 30px;
+}
+.container>.cont>table tr:nth-child(2)>td{
+	padding: 0 20px;
+}
+.container>.cont>table tr:nth-child(2)>td>hr{
+	margin-top: 50px;
+}
+.container>.cont>table tr:nth-child(2)>td>p{
+	height: 50px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.container>.cont>table tr:nth-child(2)>td>p>a{
+	width: 96px;
+	height: 24px;
+	background-color: #b1030c;
+	color: #fff;
+	border-radius: 2px;
+}
+
+
+.cont>ul {
+	display: flex;
+	justify-content: space-evenly;
+	flex-wrap: wrap;
+}
+.cont>ul>li {
+	/* margin-right: 10px; */
+	margin-bottom: 15px;
+}
+.cont>ul>li img{
+	width: 280px;
+	height: 310px;
+	display: block;
+}
+.cont>ul>li>a>h3{
+	width: 280px;
+	/* height: 30px;s */
+	font-weight: normal;
+	font-size: 16px;
+	text-align: center;
+	line-height: 30px;
+	background-color: #eee;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+.cont>p{
+	text-align: right;
+	padding: 0 20px;
+	margin: 20px 0 40px;
+	font-size: 14px;
+}

@@ -1,0 +1,127 @@
+.nav>div:nth-child(6)>a::after{
+	content: '';
+	display: block;
+	width: 100%;
+	height: 3px;
+	position: absolute;
+	background-color: #b1030c;
+	bottom: 0;
+	left: 0;
+	transition: all 0.3s;
+}
+/* 内容部分 */
+.container {
+	width: 100%;
+	border-top: 1px solid gray;
+}
+.container>.cont{
+	width: 1160px;
+	margin: 0 auto;
+}
+.container>.cont>h3{
+	margin: 30px 0;
+	color: #b1030c;
+}
+.fans_active{
+	display: flex;
+	justify-content: space-between;
+
+}
+.fans_active>.star_pic{
+	width: 70%;
+	display: flex;
+	justify-content: flex-start;
+	flex-wrap: wrap;
+}
+.fans_active>.star_pic>.star_item{
+	width: calc((100% - 3*10px)/4);
+	position: relative;
+	margin: 0 10px 10px 0;
+}
+.fans_active>.star_pic>.star_item:nth-child(4n){
+	margin-right:  0;
+}
+.fans_active>.star_pic>.star_item>img{
+	display: block;
+	width: 100%;
+}
+.fans_active>.star_pic>.star_item>p{
+	position: absolute;
+	width: 100%;
+	bottom: 0;
+	padding: 8px;
+	text-align: center;
+	color: #fff;
+	font-size: 14px;
+	background-color: rgba(0,0,0,.5);
+}
+.fans_active>.weixin{
+	width: calc(30% - 10px);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	border: 1px solid #ccc;
+	/* background-color: pink; */
+}
+.fans_active>.weixin>h5{
+	width: 100%;
+	background-color: #B1030C;
+	padding: 8px;
+	/* letter-spacing: 3px; */
+	text-align: center;
+	color: white;
+	font-size: 16px;
+}
+.fans_active>.weixin>img{
+	display: block;
+	padding: 40px;
+
+}
+.cont>p{
+	text-align: right;
+	padding: 0 20px;
+	margin: 15px 0 15px;
+	font-size: 14px;
+	padding-bottom: 10px;
+	border-bottom: 1px solid #ccc;
+}
+.cont>p>a{
+	color: #b1030c;
+}
+
+.fans_footer>div{
+	display: flex;
+	justify-content: space-between;
+	border-bottom: 1px solid #ccc;
+	padding: 20px;
+
+
+}
+/* .fans_footer>div>.footer_left{
+	padding: 20px;
+} */
+.fans_footer>div>.footer_left>h5{
+	font-size: 16px;
+	font-weight: bold;
+	padding: 10px 0;
+}
+.fans_footer>div>.footer_left>p{
+	font-size: 14px;
+	padding: 10px 0; 
+}
+
+.cont>.button{
+	padding: 40px 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.cont>.button>button{
+	background-color: #fff;
+	padding: 5px 10px;
+	margin: 5px;
+}
+.cont>.button>button.active{
+	background-color: orange;
+}
+
